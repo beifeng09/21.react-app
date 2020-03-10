@@ -1,0 +1,35 @@
+// 引入样式
+@import url(../../base.less);
+
+.ickt-btn {
+	padding: 8px 18px;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	&.btn-default {
+		background: #fff;
+		color: #333;
+		border: 1px solid #ccc;
+	}
+	&.btn-success {
+		background: @success;
+	}
+	&.btn-info {
+		background: @info;
+	}
+	&.btn-primary {
+		background: @primary;
+	}
+	&.btn-danger {
+		background: @danger;
+	}
+	&.btn-warning {
+		background: @warning;
+	}
+	&.btn-block {
+		display: block;
+		text-align: center;
+	}
+}

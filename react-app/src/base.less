@@ -1,0 +1,17 @@
+@color: #3e86ce;
+// 色彩
+@defaults: #fff;
+@primary: #409eff;
+@success: #67c23a;
+@info: #909399;
+@warning: #e6a23c;
+@danger: #f56c6c;
+// 定义方法
+.arrow(@w: 10px, @c: #000, @dir: top) {
+	// 兼容行内和块元素
+	width: 0;
+	font-size: 0;
+	border: @w solid transparent;
+	// 设置特殊边
+	border-@{dir}-color: @c;
+}
